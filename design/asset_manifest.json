@@ -1,0 +1,72 @@
+[
+  {
+    "id": "bgm_port_rhythm",
+    "name": "Harbor Pulse BGM",
+    "art_style": "modern-vector",
+    "category": null,
+    "media_type": "music",
+    "description": "Harbor Pulse BGM",
+    "aspect_ratio": null,
+    "usage": "Main gameplay background music loop playing seamlessly during the stacking run.",
+    "chroma_key": false,
+    "prompt": "128 BPM, energetic synthwave arcade rhythm, driving analog synth bassline, punchy four-on-the-floor electronic kick and snare, rhythmic synth arpeggios, melodic harbor atmosphere, upbeat tempo, seamless circular loop, strictly instrumental",
+    "actions": null,
+    "resolution": null
+  },
+  {
+    "id": "crane_hook_spreader",
+    "name": "Crane Spreader Hoist",
+    "art_style": "modern-vector",
+    "category": null,
+    "media_type": "image_other",
+    "description": "Crane Spreader Hoist",
+    "aspect_ratio": "1:1",
+    "usage": "Renders at the oscillating suspension pivot point above the swinging cargo container.",
+    "chroma_key": true,
+    "prompt": "Side-profile view. A heavy industrial gantry crane spreader hoist beam, yellow and dark-gray hazard stripes, mechanical lock twistlocks on corners, dual taut steel lifting cables extending upwards, sharp modern vector art, clean crisp outlines, vibrant colors, zero commercial icons, new design, completely independent styling",
+    "actions": null,
+    "resolution": "1K"
+  },
+  {
+    "id": "ui_restart_icon",
+    "name": "Quick Restart Icon",
+    "art_style": "modern-vector",
+    "category": null,
+    "media_type": "image_other",
+    "description": "Quick Restart Icon",
+    "aspect_ratio": "1:1",
+    "usage": "Displayed on the quick restart button in the top right corner of the HUD.",
+    "chroma_key": true,
+    "prompt": "Side-profile view. A sleek circular restart icon, glowing neon cyan curved circular arrow symbol, dark glassmorphism circular badge backing with subtle rim light, clean modern vector UI asset, zero commercial icons, new design, completely independent styling",
+    "actions": null,
+    "resolution": "1K"
+  },
+  {
+    "id": "container_ship_hull",
+    "name": "Cargo Vessel Hull Deck",
+    "art_style": "modern-vector",
+    "category": null,
+    "media_type": "image_other",
+    "description": "Cargo Vessel Hull Deck",
+    "aspect_ratio": "1:1",
+    "usage": "Renders as the static base foundation platform supporting the container tower.",
+    "chroma_key": true,
+    "prompt": "Side-profile view. A modern industrial cargo ship hull and reinforced steel cargo deck base, dark navy steel hull plating with safety yellow mooring bollards and waterline markings, crisp clean vector lines, smooth gradients, zero commercial icons, new design, completely independent styling",
+    "actions": null,
+    "resolution": "1K"
+  },
+  {
+    "id": "ui_trophy_icon",
+    "name": "High Score Trophy Icon",
+    "art_style": "modern-vector",
+    "category": null,
+    "media_type": "image_other",
+    "description": "High Score Trophy Icon",
+    "aspect_ratio": "1:1",
+    "usage": "Displayed beside the best height / high score counter on the HUD and Game Over screen.",
+    "chroma_key": true,
+    "prompt": "Side-profile view. A stylized geometric golden victory trophy cup icon, crisp angular vector facets, warm yellow and amber gradients, clean vector UI badge, zero commercial icons, new design, completely independent styling",
+    "actions": null,
+    "resolution": "1K"
+  }
+]

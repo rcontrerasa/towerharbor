@@ -1,0 +1,86 @@
+{
+  "schema": [
+    {
+      "name": "targetWinCount",
+      "type": "number",
+      "label": "Target Containers to Win",
+      "default": 200,
+      "min": 20,
+      "max": 500,
+      "step": 10
+    },
+    {
+      "name": "baseSwingSpeed",
+      "type": "number",
+      "label": "Base Swing Speed",
+      "default": 1.05,
+      "min": 0.5,
+      "max": 3.0,
+      "step": 0.05
+    },
+    {
+      "name": "dropGravity",
+      "type": "number",
+      "label": "Drop Gravity",
+      "default": 2400,
+      "min": 1200,
+      "max": 4000,
+      "step": 100
+    },
+    {
+      "name": "inertiaRatio",
+      "type": "number",
+      "label": "Inertia Transfer Ratio",
+      "default": 0.476,
+      "min": 0.1,
+      "max": 1.0,
+      "step": 0.05
+    },
+    {
+      "name": "perfectSnapTolerance",
+      "type": "number",
+      "label": "Perfect Snap Window (px)",
+      "default": 42,
+      "min": 10,
+      "max": 60,
+      "step": 2
+    },
+    {
+      "name": "maxAllowedWobble",
+      "type": "number",
+      "label": "Max Wobble Capacity",
+      "default": 140,
+      "min": 60,
+      "max": 250,
+      "step": 10
+    },
+    {
+      "name": "defaultMusicVolume",
+      "type": "number",
+      "label": "Music Volume",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "step": 0.1
+    },
+    {
+      "name": "defaultSfxVolume",
+      "type": "number",
+      "label": "SFX Volume",
+      "default": 0.7,
+      "min": 0,
+      "max": 1,
+      "step": 0.1
+    }
+  ],
+  "values": {
+    "targetWinCount": 200,
+    "baseSwingSpeed": 1.05,
+    "dropGravity": 2400,
+    "inertiaRatio": 0.476,
+    "perfectSnapTolerance": 42,
+    "maxAllowedWobble": 140,
+    "defaultMusicVolume": 0.5,
+    "defaultSfxVolume": 0.7
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "title": "Cargo Stack",
+  "hook": "Stack massive shipping containers precisely",
+  "game_overview": "A precision rhythmic cargo stacking game where players drop shipping containers from an oscillating crane onto a vessel.",
+  "artstyle": "modern-vector",
+  "genre": "arcade",
+  "winning_condition": "Stack 200 shipping containers to reach the Moon. Reaching 200 with an unbroken x200 combo unlocks the secret Helix Nebula stage up to Height 250, with a legendary Singularity Black Hole finale for an unbroken x250 combo.",
+  "losing_condition": "Accumulate maximum structural wobble resulting in catastrophic crane alignment failure.",
+  "player_mode": "single_player",
+  "supported_orientations": [
+    "portrait",
+    "tall"
+  ],
+  "input_methods": [
+    "touch",
+    "mouse",
+    "keyboard"
+  ],
+  "score_options": {
+    "score_type": "points",
+    "score_order": "higher_is_better"
+  },
+  "low_end_device_support": true,
+  "mobile_playable": true,
+  "tv_playable": false,
+  "language": [
+    "en",
+    "es"
+  ],
+  "content_descriptors": [],
+  "controls": [
+    {
+      "input": "Tap Screen / Mouse Click / Spacebar",
+      "action": "Release the swinging container with parabolic inertia."
+    },
+    {
+      "input": "Restart Button (Top Right)",
+      "action": "Instantly restart the stacking session."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Design Pillars",
+      "content": "1. Kinetic Rhythmic Timing: The elliptical swing of the crane hook creates an intuitive yet challenging tempo curve. 2. Structural Wobble Tension: Small placement errors compound into rigid body tower oscillation that players can actively damp via perfect drops. 3. High-Contrast Arcade Juice: Searing neon corrugated freight boxes, predictive screen shakes, dual shockwaves, and bimodal heartbeat pulses deliver instant sensory reward.",
+      "summary": "Core guiding tenets of timing, physics tension, and rhythmic flow."
+    },
+    {
+      "title": "Core Loop",
+      "content": "A container oscillates in an elliptical trajectory at the top of the crane. The player taps or clicks to release the block, transferring 47.6% of its tangential momentum into freefall. If the container lands within 50% overlap of the tower top, it locks into place. Perfect drops (<= 30px offset) trigger magnetic center snapping, reduce accumulated wobble by 25%, and elevate combo tiers. Offsets between 30px and 120px snap to 12px structural slots and add wobble. Drops exceeding 120px miss and rebound harmlessly off the ship base without ending the run. The tower rises indefinitely with dynamic camera tracking.",
+      "summary": "Moment-to-moment stacking, inertia transfer, combo building, and stability recovery."
+    },
+    {
+      "title": "Core Mechanics",
+      "content": "1. Elliptical Trajectory & Difficulty Scaling: Angular speed increases by 10% every 5 blocks (M_dif = 1 + floor(score/5)*0.10). Elliptical radii X=180px, Y=180px centered at X=360, Y=cameraY+280. 2. Momentum Injection: Release injects Vx and Vy calculated from 60FPS normalized position derivatives scaled by 0.476 factor. 3. Anchor Points & Snapping: 20 discrete 12px slots across 240px wide blocks. |rawDiffX| <= 30px triggers perfect drop center-snap; 30px to 120px snaps to nearest 12px slot; > 120px triggers miss bounce (Vy = -15.6). 4. Rigid-Body Tower Wobble: Blocks rotate around ship base pivot based on total accumulated offset (desfase) with sin(0.0015*t) oscillation starting from container 9. 5. Predictive Shake & Bimodal Heartbeat: 15ms impact lookahead screen shake and bimodal sinusoidal heartbeat waves at Combo x6+.",
+      "summary": "Detailed mathematical specifications for crane kinematics, collision snapping, and rigid wobble."
+    },
+    {
+      "title": "Movement & Scrolling Alignment",
+      "content": "Scrolling Axis: Vertical (down-to-up stacking) across a fixed 720x1280 logical canvas (9:16 portrait). Asset Orientation Baseline: All freight containers are horizontal 240x110px rectangles aligned perpendicular to the vertical stack. Movement Physics Dynamics: Accelerated gravity (2.03) ensures responsive drops. Camera Behavior: Smooth lerping camera tracks tower height, keeping the current stack apex centered in the lower-middle viewport while the crane hook operates overhead.",
+      "summary": "Strict vertical stacking alignment with smooth lerping camera."
+    },
+    {
+      "title": "Visual Hierarchy & Layering",
+      "content": "Layer Separation: Background features a high-contrast dark gradient (#0a0a0f to #1a1a24) with harbor water baseline and industrial dock silhouettes. Playfield Layer: High-contrast corrugated shipping containers in distinct thematic branding palettes (OCEANEX Magenta, PACIFIC Orange, NORDIC Azure, SOLARIS Neon Yellow, VENTURE Neon Green) with vertical ribs and bold diegetic labels. HUD Overlay: Sleek minimalist UI with combo multiplier scaling, current height, stability meter, and quick-restart button floating unobtrusively at screen edges.",
+      "summary": "Multi-tier layered canvas with dark industrial harbor backdrop and vibrant freight containers."
+    },
+    {
+      "title": "Characters & Enemies",
+      "content": "The central entity is the heavy harbor gantry crane and the growing freight tower. The primary obstacle is the compound wobble angle resulting from imperfect drops combined with escalating swing speeds.",
+      "summary": "The player battles physical entropy and compounded structural instability."
+    },
+    {
+      "title": "Fairness Tools",
+      "content": "1. Generous 30px magnetic snap window for perfect drops. 2. Non-punitive miss bounce for wild misses > 120px allowing players to recover without instant game-over. 3. 25% wobble reduction per perfect drop allowing skilled players to rescue destabilized towers. 4. Visual vertical alignment guide beam from crane hook.",
+      "summary": "Assistance systems ensuring skill-expressive, satisfying play."
+    },
+    {
+      "title": "Juice & Game Feel",
+      "content": "Anticipation Juice: Dynamic cable tension stretching, subtle crane rumble, and 15ms predictive screen shake prior to impact. State Change Juice: Dual concentric shockwave rings expanding on perfect drops, corrugated metal particle bursts matching container color. Impact Juice: Floating animated '\u00a1PERFECTO!' typography, progressive dynamic pitch shift on combo chains, screen-edge neon pulse, and bimodal water-wave heartbeat oscillations.",
+      "summary": "Layered audio-visual feedback across swing, release, impact, and combos."
+    },
+    {
+      "title": "Social Mechanics & Audience",
+      "content": "Targeted at hypercasual and arcade rhythm fans looking for deep physics mastery, one-more-try addiction, and satisfying stacking feel.",
+      "summary": "High-score chasing mobile and desktop arcade players."
+    },
+    {
+      "title": "Accessibility",
+      "content": "Operable via single tap, mouse click, or keyboard spacebar. High contrast palettes ensure clear readability. Fully independent of color perception through distinct typography and corrugated rib patterns.",
+      "summary": "Universal one-touch controls and high visual contrast."
+    },
+    {
+      "title": "Structural Integrity",
+      "content": "Instant in-place reset via corner button, high score persistence in local storage, responsive CSS letterboxing for fixed 720x1280 logical canvas across any viewport, and zero memory leaks.",
+      "summary": "Robust game loop, instant restart, and state persistence."
+    },
+    {
+      "title": "Virtual Touch Controls Implementation",
+      "content": "The entire canvas acts as a primary touch trigger with touch-action: none, overscroll-behavior: none, and user-select: none. Corner buttons feature explicit stopPropagation to prevent accidental block drops when restarting or toggling settings.",
+      "summary": "Full-screen tap detection optimized for mobile web."
+    }
+  ]
+}
